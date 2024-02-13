@@ -12,7 +12,21 @@
 
 <body class="m-8">
     <header>
-
+        <div class="navbar bg-[#E8F4FC] mb-5 rounded-md">
+            <div class="flex-1">
+                <div>
+                    <div><a class="btn btn-ghost text-xl md:text-2xl font-bold">Interactive</a></div>
+                    <div class="ml-4">
+                        <p>Geometry Genius</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-none">
+                <button class="btn btn-primary bg-[#1090D8] mr-4">
+                    Blog
+                </button>
+            </div>
+        </div>
     </header>
     <main>
         <!-- main content container -->
@@ -27,13 +41,15 @@
                         <p>Area (A) =
                             0.5 x b x h</p>
                         <div class="flex items-center">
-                            <input id="inputBaseValue" class="w-24 text-xl p-1 rounded-sm border-2" type="number" placeholder="b" required>
+                            <input id="inputBaseValue" class="w-24 text-xl p-1 rounded-sm border-2" type="number"
+                                placeholder="b" required>
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="inputHeightValue" class="w-24 text-xl p-1 rounded-sm border-2" type="number" placeholder="h" required>
+                            <input id="inputHeightValue" class="w-24 text-xl p-1 rounded-sm border-2" type="number"
+                                placeholder="h" required>
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span  id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="triangleCalculate()" class="btn btn-primary w-full">Calculate</button>
@@ -47,13 +63,15 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p>Area (A) = w x I</p>
                         <div class="flex items-center">
-                            <input id="rectangle-width" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="w">
+                            <input id="rectangle-width" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="w">
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="i">
+                            <input id="rectangle-length" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="i">
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span  id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="rectangle-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="rectangleCalculate()" class="btn btn-primary w-full">Calculate</button>
@@ -67,13 +85,16 @@
                         <h2 class="card-title">Parallelogram</h2>
                         <p>Area (A) = b x h</p>
                         <div class="flex items-center">
-                            <input id="parallelogram-base" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="b">
+                            <input id="parallelogram-base" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="b">
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="parallelogram-height" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="h">
+                            <input id="parallelogram-height" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="h">
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span  id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span>
+                            </p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="parallelogramCalculate()" class="btn btn-primary w-full">Calculate</button>
@@ -87,13 +108,15 @@
                         <h2 class="card-title">Rhombus</h2>
                         <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="flex items-center">
-                            <input id="rhombus-one" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="d">
+                            <input id="rhombus-one" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="d">
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="rhombus-two" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="d">
+                            <input id="rhombus-two" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="d">
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span  id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="rhombus-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="rhombusCalculate()" class="btn btn-primary w-full">Calculate</button>
@@ -107,13 +130,15 @@
                         <h2 class="card-title">Rhombus</h2>
                         <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="flex items-center">
-                            <input id="pentagon-height" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="d">
+                            <input id="pentagon-height" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="d">
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="pentagon-base" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="d">
+                            <input id="pentagon-base" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="d">
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span  id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="pentagonCalculate()" class="btn btn-primary w-full">Calculate</button>
@@ -127,13 +152,15 @@
                         <h2 class="card-title">Ellipse</h2>
                         <p>Area (A) =πab</p>
                         <div class="flex items-center">
-                            <input id="ellipse-height" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="a">
+                            <input id="ellipse-height" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="a">
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="ellipse-base" class="w-24 text-xl p-1 rounded-sm border-2" type="text" placeholder="b">
+                            <input id="ellipse-base" class="w-24 text-xl p-1 rounded-sm border-2" type="text"
+                                placeholder="b">
                             <span class="mr-4 ml-2">cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span  id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="ellipseCalculate()" class="btn btn-primary w-full">Calculate</button>
@@ -143,7 +170,7 @@
             </div>
             <!-- Area calculation container -->
             <div class=" border-2 border-gray-700 rounded-md">
-                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+                <h3 class="text-3xl text-center p-4 underline">Area Calculation</h3>
             </div>
         </div>
         <script src="./scripts/triangle-calculate.js"></script>
